@@ -1,0 +1,53 @@
+\section{Eigenschaften der Komplexen Zahlen}
+Da $\R$ zu $\C$ erweitert wird werden die Grundgesetzte nicht verletzt. Also ist auch $\C$:
+\begin{itemize}
+\item Kommutativ (Addition \& Multiplikation)
+\item Assoziativ (Addition \& Multiplikation)
+\item Distributiv
+\end{itemize} 
+
+$\C$ erweitert den Zahlenraum nur um die Zahl $j$ (ausserhalb der Elektrotechnik ist $i$ gebräuchlicher), die quadriert $-1$ ergibt.
+
+\section{Dartstellung}
+\begin{itemize}
+\item Zahlenpaar:
+\[
+	z=(z_1;z_2) \text{ mit } z_1,z_2\in\R
+\]
+\item Eulerform:
+\[
+	z = a + bj\text{ mit } a,b\in\R
+\]
+\end{itemize}
+
+Eine Zahl $z== a + bj\text{ mit } a,b\in\R$ setzt sich aus folgendem zusammen:
+\begin{itemize}
+\item[$z$] komplexe Zahl (vom lat. zusammengesetzt)
+\item[$j$/$i$] imaginäre Einheit
+\item[$a$] Realteil ($=Re(z)$), reelle Zahl
+\item[$j\cdot b$] imaginäre Zahl
+\item[$b$] Imaginärteil ($=Im(z)$)
+\end{itemize}
+
+\section{Grundoperationen}
+Zur Vermeidung von Flüchtigkeitsfehlern und zur besseren Lesbarkeit, sollte man
+zuerst den Realteil und erst danach den Imaginärteil berechnen, damit das Resultat schon \kom{Aufgeteilt} dasteht. Zudem sollte die imaginäre Einheit $j$ vor den Variablen stehen.
+\begin{align*}
+&\text{Addition:}\\
+&(a_1+ja_2) + (b_1+b_2)= a_1+b_1+ja_2+jb_2 = (a_1+b_1)+j(a_2+b_2) \\
+&\text{Subtraktion:}\\
+&(a_1+ja_2) - (b_1+b_2)=  a_1-b_1+ja_2-jb_2 = (a_1-b_1)+j(a_2-b_2)   \\
+&\text{Multiplikation:}\\
+&(a_1+ja_2) \cdot (b_1+b_2)=  a_1\cdot b_1 + \underbrace{j\cdot j}_{-1}\cdot a_2\cdot b_2 
+	+ j\cdot a_1\cdot b_2 + j\cdot a_2\cdot b_1 \\
+	&\qquad=(a_1\cdot b_1 -  a_2\cdot b_2 )
+	+ j(\cdot a_1\cdot b_2 + \cdot a_2\cdot b_1)   \\
+&\text{Division:}\\
+& (a_1+ja_2) : (b_1+b_2)=\dots=\frac{a_1b_1+a_2b_2}{b_1^2+b_2^2}
+	+j\frac{a_2b_1-a_1b_2}{b_1^2+b_2^2}
+\end{align*}
+Zur Entfernung von $j$ aus dem Nenner erweiter man mit dem Komplexkonjugierten
+von $z$ ($z=a+jb \rightarrow \overline{z}=a-jb \text{ mit } a,b\in\R$). 
+Ein weiterer Trick ist $\frac{1}{j}=-j$.
+
+% Seite 7 im Skript
